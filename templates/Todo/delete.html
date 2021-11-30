@@ -1,0 +1,19 @@
+{% extends 'Todo/base.html' %}
+{% block title %}
+    Update
+{% endblock %}
+{% block body %}
+    <div class="card">
+        <div class="card-header">
+            Delete Task
+        </div>
+        <div class="card-body">
+            <form action="{% url 'delete' todo.id %}" method="post">
+                {% csrf_token %}
+                <h5>Are you sure that you want to delete <span class="task-name">{{ todo.task }}</span>?</h5>
+                <a class="btn btn-info" href="{% url 'index' %}">No, go back</a>
+                <input class="btn btn-danger" type="submit" value="Delete">
+            </form>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,24 @@
+body{
+    background-color: #fafafa;
+}
+.task {
+    border:silver solid 1px;
+    border-radius: 0.25rem;
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+}
+.task-name {
+    color :#fe6993;
+    background-color: rgba(248, 100, 140, 0.1);
+    border-radius: 3px;
+    padding: 0.2em;
+    line-height: 2em;
+}
+.completed{
+    background-color:  #eeeeee;
+    text-decoration: line-through;
+}
+.not-completed{
+    background-color: white;
+}
